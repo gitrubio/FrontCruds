@@ -131,7 +131,6 @@ const NavBar = () => {
                 Platos
               </option>
               <option value="TAREAS">Tareas</option>
-              <option value="PARAMETROS">Three</option>
             </select>
           </div>
           <Box sx={{ flexGrow: 0 }}>
