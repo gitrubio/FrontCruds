@@ -6,10 +6,10 @@ import { changeTaks, initialtaks, taks } from "../../helper/const";
 
 const FormTarea = () => {
   const [Tarea, setTarea] = useState({
-    name: taks.name,
-    priority: taks.priority,
-    horaInicio: moment(taks.horaInicio).format("dd/mm/YYYY"),
-    horaFin: moment(taks.horaFin).format("DD-MM-YYYY"),
+    name       : taks.name,
+    priority   : taks.priority,
+    horaInicio : moment(taks.horaInicio).format("dd/mm/YYYY"),
+    horaFin    : moment(taks.horaFin).format("DD-MM-YYYY"),
   });
 
   const validarDatos = () => {
@@ -86,10 +86,10 @@ const FormTarea = () => {
   const limpiar = () => {
     changeTaks(initialtaks);
     setTarea({
-      name: "",
-      priority: 0,
-      horaInicio: "",
-      horaFin: "",
+      name       : "",
+      priority   : 0,
+      horaInicio : "",
+      horaFin    : "",
     });
   };
 
@@ -97,11 +97,11 @@ const FormTarea = () => {
     <>
       <div
         style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          position: "relative",
-          top: "10px",
+          display        : "flex",
+          alignItems     : "center",
+          justifyContent : "center",
+          position       : "relative",
+          top            : "10px",
         }}
       >
         <form style={{ width: "600px" }}>
