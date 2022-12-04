@@ -46,7 +46,7 @@ const Formplato = () => {
         return;
       } else {
         axios
-          .post("http://localhost:7002/api/plates", plato)
+          .post("http://3.233.90.188:7002/api/plates", plato)
           .then((result) => {
             Swal.fire("HECHO!", "Su plato ha sido creado", "success");
           })
@@ -64,7 +64,7 @@ const Formplato = () => {
       if (!validarDatos()) {
         return;
       } else {
-        await axios.put(`http://localhost:7002/api/plates/${plate.id}`, plato);
+        await axios.put(`http://3.233.90.188:7002/api/plates/${plate.id}`, plato);
         Swal.fire("HECHO!", "Su plato ha sido editado", "success");
       }
     } catch (error) {

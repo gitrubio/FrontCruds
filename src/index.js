@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './index.css';
 import AppRouter from './routes/AppRouter';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import PlateProvider from './hooks/PlateProvider';
 
 
@@ -12,10 +12,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
    <PlateProvider>
-    <BrowserRouter>
+    <HashRouter>
    
     <AppRouter />
-    </BrowserRouter>
+    </HashRouter>
     </PlateProvider>
     
   </React.StrictMode>

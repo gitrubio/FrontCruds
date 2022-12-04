@@ -56,7 +56,7 @@ const FormTarea = () => {
         return;
       } else {
         axios
-          .post("http://localhost:7002/api/taks", Tarea)
+          .post("http://3.233.90.188:7002/api/taks", Tarea)
           .then((result) => {
             Swal.fire("HECHO!", "Su Tarea ha sido creado", "success");
           })
@@ -74,7 +74,7 @@ const FormTarea = () => {
       if (!validarDatos()) {
         return;
       } else {
-        await axios.put(`http://localhost:7002/api/taks/${taks.id}`, Tarea);
+        await axios.put(`http://3.233.90.188:7002/api/taks/${taks.id}`, Tarea);
         Swal.fire("HECHO!", "Su Tarea ha sido editado", "success");
       }
     } catch (error) {
