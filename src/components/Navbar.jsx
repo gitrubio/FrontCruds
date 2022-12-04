@@ -12,7 +12,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Avatar, Tooltip } from '@mui/material';
-import icon from '../images/icon.png'
+import icon from '../images/icon.jpg'
 
 
 
@@ -134,7 +134,7 @@ const NavBar = () => {
             </select>
           </div>
           <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title="MuebleApp">
+            <Tooltip title="mono morado">
               <IconButton sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src={icon} />
               </IconButton>

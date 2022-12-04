@@ -16,7 +16,7 @@ const Listatareas = () => {
 
   const eliminar = async (id) => {
     try {
-      await axios.delete(`http://localhost:7002/api/taks/${id}`);
+      await axios.delete(`http://3.233.90.188:7002/api/taks/${id}`);
       obtenerDatos();
     } catch (error) {
       console.log(error);
@@ -25,7 +25,7 @@ const Listatareas = () => {
 
   const obtenerDatos = async () => {
     try {
-      const result = await axios.get("http://localhost:7002/api/taks");
+      const result = await axios.get("http://3.233.90.188:7002/api/taks");
       if (result) settareas(result.data);
     } catch (error) {
       console.log(error);
